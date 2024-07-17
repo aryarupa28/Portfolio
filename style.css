@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: rgb(62,152,120);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    padding: 70px 10%; /* Adjusted padding */
+}
+
+.home-content {
+    max-width: 45%; /* Adjusted max-width */
+    margin-right: 100px; /* Added margin on the right */
+    margin-left: 50px; 
+    text-align: center;/* Added margin on the left */
+}
+
+.home-content h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 5px; /* Reduced margin between headings */
+    text-align: center; 
+    color: #333;
+}
+
+.home-content h1 {
+    font-size: 36px;
+    margin-bottom: 5px; /* Reduced margin between headings */
+    text-align: center; 
+    color: #333;
+}
+
+.role {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+}
+
+.role span {
+    vertical-align: middle; /* Align text vertically */
+}
+
+.text-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.home-image {
+    margin-top: 50px;
+    margin-left: 100px; /* Adjusted margin on the left */
+    margin-right: 20px; /* Adjusted margin on the right */
+    width: 40%; /* Adjusted width */
+    max-width: 400px; /* Adjusted max-width */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.resume-box {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #2E8B57; /* Seafoam Green */
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.resume-box:hover {
+    transform: scale(1.05); /* Scale up the box slightly */
+     /* Darker shade of green */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for pop effect */
+}
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icon {
+    margin: 0 10px; /* Add spacing between icons */
+    width: 35px; /* Set width */
+    height: 35px;
+    transition: transform 0.3s ease;  /* Set height */
+}
+.icon:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+}
+.about {
+    text-align: center;
+}
+
+.about-heading {
+    margin-bottom: 40px;
+    font-size:large;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    flex-wrap: wrap;
+}
+
+.about-introduction,
+.education-details {
+    width: 45%; /* Adjust width as needed */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #2E8B57;
+    margin: 0 20px 20px; /* Margin on both sides */
+}
+
+.about-content h2 {
+    
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+.about-introduction {
+    text-align: justify;
+}
+
+.education-details {
+    text-align: left;
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    margin-bottom: 5px;
+}
+
+.achievements {
+    margin-top: 20px;
+}
+
+.achievements h2 {
+    margin-bottom: 10px;
+}
+.lets-connect a {
+    padding: 10px 20px;
+    background-color: #2E8B57; /* Same color as the resume box */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    float: right;
+}
+.lets-connect a:hover {
+    transform: scale(1.05); /* Scale up the box slightly */
+     /* Darker shade of green */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* Centering the skills heading */
+.sub-title {
+    text-align: center;
+    margin-top: 30px; /* Add margin to the top of the skills heading */
+    margin-bottom: 0px; /* Add margin to the bottom of the skills heading */
+}
+
+/* Centering the skills section */
+#skills {
+    margin: 0 auto; /* Center the skills section horizontally */
+    max-width: 1290px; /* Limit the maximum width of the skills section */
+}
+
+/* Centering the technical skills box */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Add some space between the boxes */
+}
+.box h2 {
+    text-align: center; /* Align the text in the center */
+}
+/* Styling for the individual skill boxes */
+.box {
+    width: calc(50% - 30px); /* Adjust the width to fit two boxes side by side with some space between them */
+    padding: 20px;
+    background-color: #f0f0f0; /* Adjust background color as needed */
+    border-radius: 10px;
+    box-shadow: 0 0px 6px #2E8B57; /* Add a shadow for depth */
+    margin: 0 15px; /* Add left and right margin */
+}
+
+/* Styling for the individual skills */
+.skill {
+    margin-bottom: 20px; /* Add some spacing between each skill */
+}
+
+/* Styling for the progress bar */
+.progress-bar {
+    height: 10px; /* Set the height of the progress bar */
+    background-color: #ddd; /* Default background color for the progress bar */
+    border-radius: 5px; /* Add some border radius for a rounded appearance */
+}
+
+/* Styling for the progress */
+.progress {
+    height: 100%; /* Set the height of the progress bar to 100% */
+    border-radius: 5px; /* Add some border radius for a rounded appearance */
+}
+
+/* Adjusting progress bar colors based on skill percentages */
+.skill:nth-child(1) .progress {
+    width: 80%; /* Java, Python */
+    background-color: #2E8B57; /* Adjust color for Java, Python */
+}
+
+.skill:nth-child(2) .progress {
+    width: 65%; /* C, C++ */
+    background-color: #4682B4; /* Adjust color for C, C++ */
+}
+
+.skill:nth-child(3) .progress {
+    width: 90%; /* HTML, CSS */
+    background-color: #4682B4; /* Adjust color for HTML, CSS */
+}
+
+.skill:nth-child(4) .progress {
+    width: 60%; /* JavaScript */
+    background-color: #2E8B57; /* Adjust color for JavaScript */
+}
+
+.skill:nth-child(5) .progress {
+    width: 30%; /* React */
+    background-color: #4682B4; /* Adjust color for React */
+}
+
+.skill:nth-child(6) .progress {
+    width: 80%; /* MySQL */
+    background-color: #2E8B57; /* Adjust color for MySQL */
+}
+.box {
+    background-color: #f0f0f0;
+    padding: 40px 30px; /* Increased spacing between top and bottom */
+    border-radius: 15px;
+    margin: 40px;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px; 
+    justify-content: space-between;/* Increased spacing between skills */
+}
+
+.skills p {
+    margin-right: 20px; /* Added gap between skill name and stars */
+    font-size: 24px;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 28px;
+    color: #2E8B57; /* Adjust color as needed */
+}
+#projects {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.project-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.project-item {
+    text-align: center;
+    position: relative;
+}
+
+.project-item img {
+    width: 100%;
+    height: 450px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the images maintain their aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), #2E8B57);
+    border-radius: 10px;
+    opacity: 0; /* Initially hide the gradient overlay */
+    transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
+
+.project-item:hover::before {
+    opacity: 1; /* Show the gradient overlay on hover */
+}
+
+.project-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    position: relative; /* Ensure text stays above the overlay */
+    z-index: 2; /* Ensure text stays above the overlay */
+}
+
+.project-item a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff;
+    opacity: 0;
+    z-index: 2; /* Ensure the link is above the overlay */
+    text-decoration: none;
+}
+.project-item:hover a {
+    opacity: 1; /* Show the link icon on hover */
+}
+.project-item a:hover {
+    color: black;
+}
+#contact {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+#contact p {
+    margin-bottom: 20px;
+}
+.contact-boxes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info, .contact-form {
+    width: 45%;
+}
+
+.contact-info {
+    margin-top: 40px;
+    background-color: #2E8B57;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    height: 40vh;
+}
+
+.contact-info .social-links a {
+    color: #fff;
+    margin-right: 10px;
+    font-size:x-large;
+}
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #2E8B57; /* Change color to match your design */
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.social-links a:hover {
+    transform: scale(1.05); /* Change color on hover */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #2E8B57;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: scale(1.05); 
+    box-shadow : 0 0 10px rgba(0, 0, 0, 0.3);
+}
+footer {
+    text-align: center;
+    background-color: rgb(62,152,120);
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
